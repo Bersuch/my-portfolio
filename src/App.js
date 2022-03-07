@@ -19,9 +19,22 @@ function App() {
 
     
     <main className="text-gray-400 bg-gray-900 body-font">
-      <About />
+        <About />
+        <Projects />
+        <Skills />
     </main>
   );
 }
+
+/* 
+
+<Navbar />
+      <About />
+      <Projects />
+      <Skills />
+      <Testimonials />
+      <Contact />
+
+*/
 
 export default App;
