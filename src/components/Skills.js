@@ -1,6 +1,7 @@
 // src/components/Skills.js
 import React from "react";
 import { skills } from "../data";
+import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import { projects } from "../data"
 
 export default function Skills() {
@@ -8,12 +9,7 @@ export default function Skills() {
         <section id="skills">
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-10 inline-block mb-4">
-                        <path d="M13 7H7v6h6V7z">
-                        </path>
-                        <path fillRule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clip-rule="evenodd">
-                        </path>
-                    </svg>
+                    <ChipIcon className="w-10 inline-block mb-4" />
                     <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
                         ipsa delectus eum quo voluptas aspernatur accusantium distinctio
@@ -24,10 +20,7 @@ export default function Skills() {
                     {skills.map((skill) => (
                     <div key={skill} className="p-2 sm:w-1/2 w-full">
                         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" className="text-green-400 w-6 h-6 flex-shrink-0 mr-4">
-                                <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd">
-                                </path>
-                            </svg>
+                        <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
                             <span className="title-font font-medium text-white">
                             {skill}
                             </span>
